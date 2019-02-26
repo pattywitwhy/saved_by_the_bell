@@ -1,0 +1,1 @@
+json.partial! @temptation, partial: "temptation", as: :temptation
