@@ -1,3 +1,10 @@
+User.create!(
+             name: "Dylan",
+             email: "dylan@gmail.com",
+             password: "password",
+             password_confirmation: "password"
+            )
+
 Temptation.create!(
                     name: "coffee",
                     cost: 5,
