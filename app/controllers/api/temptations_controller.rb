@@ -8,7 +8,6 @@ class Api::TemptationsController < ApplicationController
     @temptation = Temptation.new(
                                   name: params[:name],
                                   cost: params[:cost],
-                                  frequency: params[:frequency],
                                   time: params[:time]
                                 )
 
@@ -29,7 +28,6 @@ class Api::TemptationsController < ApplicationController
 
     @temptation.name = params[:name] || @temptation.name
     @temptation.cost = params[:cost] || @temptation.cost
-    @temptation.frequency = params[:frequency] || @temptation.frequency
     @temptation.time = params[:time] || @temptation.time
 
     if @temptation.save
