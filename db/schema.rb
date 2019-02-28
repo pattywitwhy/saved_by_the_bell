@@ -28,17 +28,17 @@ ActiveRecord::Schema.define(version: 2019_02_28_214238) do
   create_table "temptations", force: :cascade do |t|
     t.string "name"
     t.integer "cost"
-    t.datetime "time"
+    t.time "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "Sunday"
-    t.boolean "Monday"
-    t.boolean "Tuesday"
-    t.boolean "Wednesday"
-    t.boolean "Thursday"
-    t.boolean "Friday"
-    t.boolean "Saturday"
     t.integer "user_id"
+    t.boolean "sunday"
+    t.boolean "monday"
+    t.boolean "tuesday"
+    t.boolean "wednesday"
+    t.boolean "thursday"
+    t.boolean "friday"
+    t.boolean "saturday"
   end
 
   create_table "users", force: :cascade do |t|
