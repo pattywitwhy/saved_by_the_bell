@@ -15,7 +15,8 @@ class Api::TemptationsController < ApplicationController
                                   thursday: params[:thursday],
                                   friday: params[:friday],
                                   saturday: params[:saturday],
-                                  time: params[:time]
+                                  time: params[:time],
+                                  user_id: current_user.id
                                 )
 
     if @temptation.save
