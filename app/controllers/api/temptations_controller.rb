@@ -1,4 +1,5 @@
 class Api::TemptationsController < ApplicationController
+  before_action :authenticate_user, only: [:create]
   def index
     @temptations = Temptation.all
     render 'index.json.jbuilder'
