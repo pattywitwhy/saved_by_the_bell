@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 2019_02_28_214238) do
     t.time "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
     t.boolean "sunday"
     t.boolean "monday"
     t.boolean "tuesday"
@@ -39,6 +38,7 @@ ActiveRecord::Schema.define(version: 2019_02_28_214238) do
     t.boolean "thursday"
     t.boolean "friday"
     t.boolean "saturday"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
