@@ -15,5 +15,10 @@ Rails.application.routes.draw do
     post '/users' => 'users#create'
 
     post '/sessions' => 'sessions#create'
+
+    post "/notifications" => "notifications#create"
+    post "/notifications" => "notifications#notify"
   end
+
 end
+
