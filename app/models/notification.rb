@@ -10,5 +10,9 @@ class Notification < ApplicationRecord
     temptation.id = current_user.id
   end
 
-  
+  def temptation_name
+    notification.name = temptation.name
+  end
+
+
 end

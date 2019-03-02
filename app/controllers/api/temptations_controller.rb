@@ -1,4 +1,5 @@
 class Api::TemptationsController < ApplicationController
+  before_action :authenticate_user, only: [:create]
   def index
     @temptations = Temptation.all
     render 'index.json.jbuilder'
@@ -15,7 +16,8 @@ class Api::TemptationsController < ApplicationController
                                   thursday: params[:thursday],
                                   friday: params[:friday],
                                   saturday: params[:saturday],
-                                  time: params[:time]
+                                  time: params[:time],
+                                  user_id: current_user.id
                                 )
 
     if @temptation.save
