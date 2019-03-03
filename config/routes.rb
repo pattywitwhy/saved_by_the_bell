@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
     post "/notifications" => "notifications#create"
     post "/notifications" => "notifications#notify"
+
+    post "/notifications", to: 'notifications#create'
   end
 
 end

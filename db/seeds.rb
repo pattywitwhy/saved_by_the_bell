@@ -1,6 +1,6 @@
 User.create!(
-             name: "Dylan",
-             email: "dylan@gmail.com",
+             name: "Patty",
+             email: "patty@gmail.com",
              password: "password",
              password_confirmation: "password"
             )
@@ -8,52 +8,52 @@ User.create!(
 Temptation.create!(
                     name: "coffee",
                     cost: 5,
-                    Sunday: true,
-                    Monday: true,
-                    Tuesday: true,
-                    Wednesday: true,
-                    Thursday: true,
-                    Friday: true,
-                    Saturday: true,
+                    sunday: true,
+                    monday: true,
+                    tuesday: true,
+                    wednesday: true,
+                    thursday: true,
+                    friday: true,
+                    saturday: true,
                     user_id: 1
                   )
 
 Temptation.create!(
                     name: "lunch",
                     cost: 15,
-                    Sunday: true,
-                    Monday: true,
-                    Tuesday: true,
-                    Wednesday: true,
-                    Thursday: true,
-                    Friday: true,
-                    Saturday: true,
+                    sunday: true,
+                    monday: true,
+                    tuesday: true,
+                    wednesday: true,
+                    thursday: true,
+                    friday: true,
+                    saturday: true,
                     user_id: 1
                     )
 
 Temptation.create!(
                     name: "uber_morning",
                     cost: 25,
-                    Sunday: true,
-                    Monday: true,
-                    Tuesday: true,
-                    Wednesday: true,
-                    Thursday: true,
-                    Friday: true,
-                    Saturday: true,
+                    sunday: true,
+                    monday: true,
+                    tuesday: true,
+                    wednesday: true,
+                    thursday: true,
+                    friday: true,
+                    saturday: true,
                     user_id: 1
                     )
 
 Temptation.create!(
                     name: "uber_night",
                     cost: 30,
-                    Sunday: true,
-                    Monday: true,
-                    Tuesday: true,
-                    Wednesday: true,
-                    Thursday: true,
-                    Friday: true,
-                    Saturday: true,
+                    sunday: true,
+                    monday: true,
+                    tuesday: true,
+                    wednesday: true,
+                    thursday: true,
+                    friday: true,
+                    saturday: true,
                     user_id: 1
                     )
 

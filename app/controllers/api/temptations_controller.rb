@@ -21,6 +21,14 @@ class Api::TemptationsController < ApplicationController
                                 )
 
     if @temptation.save
+      @name = @temptation.name
+      # @name = "Uber"
+      client = Twilio::REST::Client.new
+        client.messages.create({
+          :from => Rails.application.credentials.twilio_phone_number,
+          :to => '+16108642346',
+          :body => 'Hey friend, skip the ' + @name
+        })
       render 'show.json.jbuilder'
     else
       render json: { errors: @temptation.errors.full_messages }, status: :unprocessable_entity
