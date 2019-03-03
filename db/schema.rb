@@ -10,20 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_214238) do
+ActiveRecord::Schema.define(version: 2019_03_03_165528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "goals", force: :cascade do |t|
-    t.string "name"
-    t.datetime "start"
-    t.datetime "end"
-    t.integer "dollar_amount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id"
-  end
 
   create_table "temptations", force: :cascade do |t|
     t.string "name"
@@ -47,6 +37,10 @@ ActiveRecord::Schema.define(version: 2019_02_28_214238) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "goal_title"
+    t.datetime "goal_start"
+    t.datetime "goal_end"
+    t.integer "goal_amount"
   end
 
 end

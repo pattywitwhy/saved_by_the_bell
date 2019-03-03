@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
   namespace :api do
-    get "/goals" => "goals#index"
-    post "/goals" => "goals#create"
-    get "/goals/:id" => "goals#show"
-    patch "/goals/:id" => "goals#update"
-    delete "/goals/:id" => "goals#destroy"
 
     get "/temptations" => "temptations#index"
     post "/temptations" => "temptations#create"
@@ -13,6 +8,7 @@ Rails.application.routes.draw do
     delete "/temptations/:id" => "temptations#destroy"
 
     post '/users' => 'users#create'
+    patch "/users/:id" => "users#update"
 
     post '/sessions' => 'sessions#create'
 
