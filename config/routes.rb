@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   namespace :api do
-
     get "/temptations" => "temptations#index"
     post "/temptations" => "temptations#create"
     get "/temptations/:id" => "temptations#show"
@@ -14,8 +13,6 @@ Rails.application.routes.draw do
 
     post "/notifications" => "notifications#create"
     post "/notifications" => "notifications#notify"
-
-    post "/notifications", to: 'notifications#create'
   end
 
 end
