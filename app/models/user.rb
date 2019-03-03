@@ -3,6 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   has_many :goals
   has_many :temptations
+  has_many :notifications
 
   def daily_savings
     sum = 0

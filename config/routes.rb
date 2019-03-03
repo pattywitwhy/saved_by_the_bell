@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   namespace :api do
-
     get "/temptations" => "temptations#index"
     post "/temptations" => "temptations#create"
     get "/temptations/:id" => "temptations#show"
@@ -12,5 +11,10 @@ Rails.application.routes.draw do
     patch "/users/:id" => "users#update"
 
     post '/sessions' => 'sessions#create'
+
+    post "/notifications" => "notifications#create"
+    post "/notifications" => "notifications#notify"
   end
+
 end
+
