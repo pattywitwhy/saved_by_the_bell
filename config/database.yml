@@ -83,9 +83,3 @@ production:
   database: saved_by_the_bell_production
   username: saved_by_the_bell
   password: <%= ENV['SAVED_BY_THE_BELL_DATABASE_PASSWORD'] %>
-
-
-
-# twilio_account_sid:  <%= ENV.fetch("TWILIO_ACCOUNT_SID", "AC5b7066f02d447b1db91b6e71b1753476") %>
-# twilio_auth_token:  <%= ENV.fetch("TWILIO_AUTH_TOKEN", "6091eb9c51ca6d3dc489bead4a52e41a") %>
-# twilio_phone_number:  <%= ENV.fetch("TWILIO_PHONE_NUMBER", "+14843218256") %>
